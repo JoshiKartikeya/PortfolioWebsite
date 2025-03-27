@@ -1,9 +1,8 @@
-import { Typography } from "@mui/material";
+// import { Typography } from "@mui/material";
+import AllComponents from "@/components/AllComponents";
 
 export default function Home() {
-  return (
-    <div className="flex flex-item justify-center">
-      <Typography className="text-blue-800">Tailwind working or not</Typography>
-    </div>
+  return (<main>
+      <AllComponents /></main>
   );
 }
