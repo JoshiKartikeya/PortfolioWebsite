@@ -2,7 +2,7 @@ import {
   Code,
   Database,
   Cpu,
-  Brush,
+  // Brush,
   Smartphone,
   Cloud,
   GitBranch,

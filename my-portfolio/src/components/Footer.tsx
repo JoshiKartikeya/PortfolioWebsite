@@ -88,7 +88,7 @@ export default function Footer() {
                   key={link.name}
                   asChild
                   variant="outline"
-                  size="icon"
+                  size="md"
                   className="rounded-full"
                 >
                   <Link href={link.href} target="_blank">

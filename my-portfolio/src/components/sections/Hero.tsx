@@ -3,8 +3,9 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import AnimatedText from "@/components/shared/AnimatedText";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Sphere } from "@react-three/drei";
+// Import for ThreeDSphere commented out since we're temporarily disabling it
+// import dynamic from "next/dynamic";
+// const ThreeDSphere = dynamic(() => import("../ThreeDSphere"), { ssr: false });
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -32,24 +33,32 @@ export default function Hero() {
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-10 left-1/4 w-72 h-72 bg-teal-500/20 rounded-full mix-blend-soft-light filter blur-3xl animate-blob"></div>
         <div className="absolute top-20 right-1/4 w-72 h-72 bg-purple-500/20 rounded-full mix-blend-soft-light filter blur-3xl animate-blob animation-delay-2000"></div>
-      </div>
-
-      {/* 3D Sphere */}
-      <div className="absolute right-10 top-1/4 w-64 h-64 md:w-96 md:h-96">
-        <Canvas>
-          <OrbitControls enableZoom={false} />
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[3, 2, 1]} />
-          <Sphere args={[1.5, 64, 64]}>
-            <meshStandardMaterial
-              color="#6366f1"
-              wireframe
-              roughness={0.2}
-              metalness={0.8}
-            />
-          </Sphere>
-        </Canvas>
-      </div>
+      </div>      {/* Simple animated element instead of 3D Sphere */}
+      <motion.div 
+        className="absolute right-10 top-1/4 w-64 h-64 md:w-96 md:h-96 rounded-full border-4 border-primary/30"
+        animate={{ 
+          rotate: 360,
+          borderColor: ["rgba(99, 102, 241, 0.3)", "rgba(168, 85, 247, 0.3)", "rgba(99, 102, 241, 0.3)"]
+        }}
+        transition={{ 
+          duration: 20, 
+          repeat: Infinity,
+          ease: "linear"
+        }}
+      >
+        <motion.div
+          className="absolute inset-4 rounded-full border-4 border-primary/40"
+          animate={{ 
+            rotate: -180,
+            borderColor: ["rgba(99, 102, 241, 0.4)", "rgba(168, 85, 247, 0.4)", "rgba(99, 102, 241, 0.4)"]
+          }}
+          transition={{ 
+            duration: 15, 
+            repeat: Infinity,
+            ease: "linear"
+          }}
+        />
+      </motion.div>
 
       <motion.div
         className="container relative z-10 py-20"
@@ -82,14 +91,14 @@ export default function Hero() {
         </motion.p>
 
         <motion.div className="flex flex-wrap gap-4" variants={itemVariants}>
-            <Button asChild size="lg">
-              <a href="#projects">View Projects</a>
-            </Button>
-            <Button asChild variant="secondary" size="lg">
-              <a href="#contact">Get in Touch</a>
-            </Button>
-          </motion.div>
+          <Button asChild size="lg">
+            <a href="#projects">View Projects</a>
+          </Button>
+          <Button asChild variant="secondary" size="lg">
+            <a href="#contact">Get in Touch</a>
+          </Button>
         </motion.div>
+      </motion.div>
     </section>
   );
 }
