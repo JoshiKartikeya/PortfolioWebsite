@@ -66,7 +66,9 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">contact@example.com</p>
+                  <p className="text-muted-foreground">
+                    kartikeyajoshi30@gmail.com
+                  </p>
                 </div>
               </div>
 
@@ -88,7 +90,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-medium">Phone</p>
-                  <p className="text-muted-foreground">+1 (123) 456-7890</p>
+                  <p className="text-muted-foreground">+91-9519021218</p>
                 </div>
               </div>
             </div>

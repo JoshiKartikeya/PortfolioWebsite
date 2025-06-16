@@ -19,6 +19,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
+  // const [activeTab, setActiveTab] = useState();
 
   return (
     <header className="fixed w-full top-0 z-50 backdrop-blur-md bg-background/80 border-b">
