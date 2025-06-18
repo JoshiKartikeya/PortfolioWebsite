@@ -76,7 +76,7 @@ export default function Hero() {
       >
         <motion.div variants={itemVariants}>
           <div className="inline-block px-4 py-1 mb-4 text-sm font-medium rounded-full bg-primary/10 text-primary">
-            <AnimatedText text="Frontend Developer" />
+            <AnimatedText text="AI Enthusiast" />
           </div>
         </motion.div>
 
@@ -94,8 +94,10 @@ export default function Hero() {
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8"
           variants={itemVariants}
         >
-          I create immersive digital experiences with cutting-edge web
-          technologies. Passionate about UI/UX and interactive design.
+          Computer Science undergraduate with hands-on experience in full-stack
+          web development, data scraping, and backend systems using React,
+          Node.js, and PostgreSQL. Currently building real-world projects
+          involving REST APIs, Puppeteer, and knowledge graphs with Neo4j.
         </motion.p>
 
         <motion.div className="flex flex-wrap gap-4" variants={itemVariants}>

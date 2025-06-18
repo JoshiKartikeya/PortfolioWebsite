@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "E-Commerce Platform",
     category: "Web Application",
     description: "A full-featured online store with cart functionality, payment processing, and admin dashboard.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+    technologies: ["React", "Node.js", "Postgres", "Stripe"],
     link: "#"
   },
   {

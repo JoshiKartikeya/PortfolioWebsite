@@ -2,8 +2,8 @@ import {
   Code,
   Database,
   Cpu,
-  // Brush,
-  Smartphone,
+  Brush,
+  // Smartphone,
   Cloud,
   GitBranch,
   Layout,
@@ -57,7 +57,7 @@ export const skills: Skill[] = [
   },
   {
     id: 7,
-    name: "MongoDB",
+    name: "PostgreSQL",
     category: "Database",
     level: 70,
     icon: Database
@@ -78,9 +78,9 @@ export const skills: Skill[] = [
   },
   {
     id: 10,
-    name: "React Native",
-    category: "Mobile",
+    name: "Pytorch",
+    category: "AI/ML",
     level: 75,
-    icon: Smartphone
+    icon: Brush
   }
 ];
