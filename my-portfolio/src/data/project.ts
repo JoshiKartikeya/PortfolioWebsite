@@ -3,16 +3,18 @@ import { Project } from '@/types';
 export const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Reminder ChatBot",
     category: "Web Application",
-    description: "A full-featured online store with cart functionality, payment processing, and admin dashboard.",
-    technologies: ["React", "Node.js", "Postgres", "Stripe"],
-    link: "#"
+    imageLink: "/Images/chatBox.png",
+    description: "A chatbot that take in your text comand and then identifies the reminder part and sets the reminder accordingly .",
+    technologies: ["Python", "React+Vite", "FastAPI", "MongoDB" , "NLP"],
+    link: "https://github.com/JoshiKartikeya/reminder-chatbox"
   },
   {
     id: 2,
     title: "Task Management App",
     category: "Productivity Tool",
+
     description: "Kanban-style task manager with drag-and-drop interface, team collaboration, and analytics.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
     link: "#"
@@ -21,9 +23,10 @@ export const projects: Project[] = [
     id: 3,
     title: "Weather Dashboard",
     category: "Data Visualization",
+    imageLink: "/Images/weatherDashboard.jpg",
     description: "Real-time weather information with interactive maps, forecasts, and location-based alerts.",
-    technologies: ["React", "D3.js", "Weather API", "Geolocation"],
-    link: "#"
+    technologies: ["NextJS", "D3.js", "Weather API", "Geolocation"],
+    link: "https://github.com/JoshiKartikeya/weatherDashboard"
   },
   {
     id: 4,
@@ -39,7 +42,7 @@ export const projects: Project[] = [
     category: "Personal Project",
     description: "Modern portfolio site with 3D animations, dark mode, and responsive design.",
     technologies: ["Next.js", "Three.js", "Framer Motion", "Tailwind CSS"],
-    link: "#"
+    link: "https://github.com/JoshiKartikeya/PortfolioWebsite"
   },
   {
     id: 6,

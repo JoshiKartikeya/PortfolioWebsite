@@ -16,7 +16,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div className="relative aspect-video bg-muted">
           {/* Placeholder for project image */}
           <div className="w-full h-full bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
-            <div className="bg-muted border-2 border-dashed rounded-xl w-16 h-16" />
+            {/* <div className="bg-muted border-2 border-dashed rounded-xl w-16 h-16" /> */}
+            <img src={project.imageLink} alt={project.title} className="object-cover w-full h-full" />
           </div>
         </div>
 

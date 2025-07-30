@@ -164,7 +164,7 @@ export default function ContactSection() {
                 )}
               </div>
 
-              <Button type="submit" size="lg" className="w-full">
+              <Button type="submit" size="lg" className="w-full" >
                 Send Message
               </Button>
             </form>

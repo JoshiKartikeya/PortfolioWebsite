@@ -3,6 +3,7 @@ export type Project = {
   title: string;
   category: string;
   description: string;
+  imageLink?: string; // Optional field for project image
   technologies: string[];
   link: string;
 };

@@ -3,9 +3,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import AnimatedText from "@/components/shared/AnimatedText";
-// Import for ThreeDSphere commented out since we're temporarily disabling it
-// import dynamic from "next/dynamic";
-// const ThreeDSphere = dynamic(() => import("../ThreeDSphere"), { ssr: false });
 
 const containerVariants = {
   hidden: { opacity: 0 },
