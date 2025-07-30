@@ -40,6 +40,7 @@ export const projects: Project[] = [
     id: 5,
     title: "Portfolio Website",
     category: "Personal Project",
+    imageLink: "/Images/portfolioWebsite.png",
     description: "Modern portfolio site with 3D animations, dark mode, and responsive design.",
     technologies: ["Next.js", "Three.js", "Framer Motion", "Tailwind CSS"],
     link: "https://github.com/JoshiKartikeya/PortfolioWebsite"
