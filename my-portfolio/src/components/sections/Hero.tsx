@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import AnimatedText from "@/components/shared/AnimatedText";
+import Image from "next/image";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -31,40 +32,21 @@ export default function Hero() {
         <div className="absolute top-10 left-1/4 w-72 h-72 bg-teal-500/20 rounded-full mix-blend-soft-light filter blur-3xl animate-blob"></div>
         <div className="absolute top-20 right-1/4 w-72 h-72 bg-purple-500/20 rounded-full mix-blend-soft-light filter blur-3xl animate-blob animation-delay-2000"></div>
       </div>{" "}
-      {/* Simple animated element instead of 3D Sphere */}
-      <motion.div
-        className="absolute right-10 top-1/4 w-64 h-64 md:w-96 md:h-96 rounded-full border-4 border-primary/30"
-        animate={{
-          rotate: 360,
-          borderColor: [
-            "rgba(99, 102, 241, 0.3)",
-            "rgba(168, 85, 247, 0.3)",
-            "rgba(99, 102, 241, 0.3)",
-          ],
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-      >
-        <motion.div
-          className="absolute inset-4 rounded-full border-4 border-primary/40"
-          animate={{
-            rotate: -180,
-            borderColor: [
-              "rgba(99, 102, 241, 0.4)",
-              "rgba(168, 85, 247, 0.4)",
-              "rgba(99, 102, 241, 0.4)",
-            ],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
-      </motion.div>
+      {/* Static Profile Image with Decorative Circles */}
+      <div className="absolute right-10 top-1/4 w-64 h-64 md:w-96 md:h-96 rounded-full border-4 border-primary/30">
+        <div className="absolute inset-4 rounded-full border-4 border-primary/40">
+          {/* Profile Image */}
+          <div className="absolute inset-4 rounded-full overflow-hidden bg-background/80 backdrop-blur-sm">
+            <Image
+              src="/Images/profilePic.png"
+              alt="Kartikeya Profile"
+              width={500}
+              height={500}
+              className="w-full h-full object-cover object-[center_30%] rounded-full scale-105"
+            />
+          </div>
+        </div>
+      </div>
       <motion.div
         className="container relative z-10 py-20"
         variants={containerVariants}
