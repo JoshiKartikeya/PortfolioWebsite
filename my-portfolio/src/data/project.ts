@@ -14,7 +14,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Task Management App",
     category: "Productivity Tool",
-
+    imageLink: "/Images/toDoList.png",
     description: "Kanban-style task manager with drag-and-drop interface, team collaboration, and analytics.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
     link: "#"
@@ -32,6 +32,7 @@ export const projects: Project[] = [
     id: 4,
     title: "Fitness Tracker",
     category: "Mobile Application",
+    imageLink: "/Images/fitnessTracker.png",
     description: "Workout planner and progress tracker with exercise library and performance analytics.",
     technologies: ["React Native", "Redux", "GraphQL", "Firebase"],
     link: "#"
@@ -48,6 +49,7 @@ export const projects: Project[] = [
   {
     id: 6,
     title: "Social Media Dashboard",
+    imageLink: "/Images/socialMediaDashboard.png",
     category: "Analytics Platform",
     description: "Comprehensive analytics platform for tracking engagement across multiple social networks.",
     technologies: ["Vue.js", "Express", "MongoDB", "Chart.js"],
